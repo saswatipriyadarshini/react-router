@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button } from 'reactstrap';
+import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+
 import './App.css';
 
 class App extends Component {
   render(props) {
     return (
-      <div className="App">
-        <Jumbotron>
-          <h1 className="display-3">Hello, world!</h1>
-          <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr className="my-2" />
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <p className="lead">
-            <Button color="primary">Learn More</Button>
-          </p>
-        </Jumbotron>
+      <div className="App container">
+        <nav className="navbar navbar-default">
+          <div className="container-fluid">
+            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul className="nav navbar-nav">
+                <li><NavLink to="/">Router</NavLink></li>
+                <li className="active"><NavLink to="/">Home<span className="sr-only">(current)</span></NavLink></li>
+                <li><NavLink to="/submit">Add A Route</NavLink></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     );
   }
