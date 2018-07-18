@@ -26,3 +26,15 @@
   /*from { transform: rotate(0deg); }*/
   /*to { transform: rotate(360deg); }*/
 /*}*/
+.activeNav{
+  background-color: #001133!important;
+  color: #fff!important;
+}
+Form{
+  height: 500px;
+  width: 500px;
+  margin-left: 340px;
+}
+#radio-btn, #radio-btn1{
+  cursor: pointer;
+}
