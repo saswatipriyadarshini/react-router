@@ -38,3 +38,7 @@ Form{
 #radio-btn, #radio-btn1{
   cursor: pointer;
 }
+.home-wrapper img{
+  width: 800px;
+  height: 400px;
+}
